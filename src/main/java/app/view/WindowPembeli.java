@@ -5,8 +5,8 @@ import java.awt.*;
 import java.awt.event.*;
 
 import app.components.CusButton;
-import app.model.Barang;
-import app.model.DataBarang;
+import app.modules.Barang;
+import app.modules.DataBarang;
 
 public class WindowPembeli extends JPanel {
 	private int itemsBought = 0;

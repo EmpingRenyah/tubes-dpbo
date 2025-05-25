@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-import app.model.*;
+import app.modules.*;
 import app.components.*;
 
 public class WindowPenjual extends JPanel {

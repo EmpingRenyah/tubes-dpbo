@@ -1,7 +1,6 @@
 package app.view;
 
 import javax.swing.*;
-import javax.swing.border.*;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -41,7 +40,7 @@ public class WindowLogin extends JPanel  {
 		JPanel centerPanel = new JPanel();
 		
 		//testing boundaries
-		//centerPanel.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.black));
+		// centerPanel.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.black));
 		
 		//Uniform sizing
 		int outerWidth = (int)(MainWindow.winWidth * 0.15);
@@ -66,10 +65,10 @@ public class WindowLogin extends JPanel  {
 		JPanel buttonPanel = new JPanel();
 		
 		//testing boundaries
-		//logoPanel.setBackground(Color.blue);
-		//namePanel.setBackground(Color.red);
-		//passPanel.setBackground(Color.yellow);
-		//buttonPanel.setBackground(Color.pink);
+		// logoPanel.setBackground(Color.blue);
+		// namePanel.setBackground(Color.red);
+		// passPanel.setBackground(Color.yellow);
+		// buttonPanel.setBackground(Color.pink);
 		
 		//Sizing
 		logoPanel.setPreferredSize(new Dimension(0, 150));

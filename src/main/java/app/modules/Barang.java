@@ -13,10 +13,9 @@ public class Barang {
 	
 	private SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 	
-	public Barang(String name, String type, Date kadalusarsa, int harga) {
+	public Barang(String name, String type, int harga) {
 		this.name = name;
 		this.type = type;
-		this.kadaluarsa= kadaluarsa;
 		this.harga = harga;
 	}
 	

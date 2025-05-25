@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-import app.model.*;
 import app.components.*;
 
 public class WindowTambahBarang extends JPanel {
