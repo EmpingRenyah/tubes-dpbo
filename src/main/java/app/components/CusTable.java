@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 
-import app.model.Barang;
+import app.modules.Barang;
 
 public class CusTable extends JPanel {
 	private int row;
