@@ -1,4 +1,4 @@
-package app.modules;
+package app.model;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public class Donator extends User implements Contributor {
 		this.barang = new ArrayList<>();
 	}
 	public void addBarang(Barang barang) {
-        this.barang.add(barang);
+        barang.add(barang);
     }
 
 
