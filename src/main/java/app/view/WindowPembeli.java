@@ -181,10 +181,10 @@ public class WindowPembeli extends JPanel {
 		JPanel rightBtnPanel = new JPanel();
 		
 		//testing boundaries
-//		outerLeft.setBackground(Color.red);
-//		outerRight.setBackground(Color.red);
-//		leftBtnPanel.setBackground(Color.DARK_GRAY);
-//		rightBtnPanel.setBackground(Color.blue);
+		// outerLeft.setBackground(Color.red);
+		// outerRight.setBackground(Color.red);
+		// leftBtnPanel.setBackground(Color.DARK_GRAY);
+		// rightBtnPanel.setBackground(Color.blue);
 		
 		leftBtnPanel.setPreferredSize(new Dimension(275,0));
 		rightBtnPanel.setPreferredSize(new Dimension(275,0));
@@ -209,32 +209,32 @@ public class WindowPembeli extends JPanel {
 	}
 	
 	// Mengambil data dari class DataBarang dan tambahkan ke tabel
-			private void refreshTable(JPanel tablePanel) {
-				
-		        // Convert item list to table data
-		        String[] columns = {"Nama", "Tipe", "Kadaluarsa", "Price (IDR)"};
-		        Object[][] data = new Object[DataBarang.listBarang.size()][4];
+	private void refreshTable(JPanel tablePanel) {
+		
+		// Convert item list to table data
+		String[] columns = {"Nama", "Tipe", "Kadaluarsa", "Price (IDR)"};
+		Object[][] data = new Object[DataBarang.listBarang.size()][4];
 
-		        for (int i = 0; i < DataBarang.listBarang.size(); i++) {
-		            Barang item = DataBarang.listBarang.get(i);
-		            data[i][0] = item.getName();
-		            data[i][1] = item.getType();
-		            data[i][2] = item.getDate();
-		            data[i][3] = item.getHarga();
-		        }
+		for (int i = 0; i < DataBarang.listBarang.size(); i++) {
+			Barang item = DataBarang.listBarang.get(i);
+			data[i][0] = item.getName();
+			data[i][1] = item.getType();
+			data[i][2] = item.getDate();
+			data[i][3] = item.getHarga();
+		}
 
-		        if (table != null) {
-		            remove(scroller);
-		        }
+		if (table != null) {
+			remove(scroller);
+		}
 
-		        table = new JTable(data, columns);
-		        scroller = new JScrollPane(table);
-		        
-		        scroller.setPreferredSize(new Dimension((int)(MainWindow.winWidth * 0.8), 235));
-		        
-		        tablePanel.add(scroller, BorderLayout.CENTER);
+		table = new JTable(data, columns);
+		scroller = new JScrollPane(table);
+		
+		scroller.setPreferredSize(new Dimension((int)(MainWindow.winWidth * 0.8), 235));
+		
+		tablePanel.add(scroller, BorderLayout.CENTER);
 
-		        revalidate();
-		        repaint();
-		    }
+		revalidate();
+		repaint();
+	}
 }
